@@ -1,3 +1,5 @@
+#C
+
 import random
 def new_deck():
    
