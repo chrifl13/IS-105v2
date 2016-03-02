@@ -1,0 +1,46 @@
+ICA03 Gruppe09 
+a)
+mottatt  string table      dekodet
+2          table[3]              b
+3          table[4] = bc       c
+3          table[5] = cc       c
+1          table[6] = ca       a
+3          table[7] = ac       c
+4          table[8] = cb       bc
+5          table[9] = bcc     cc
+10         table[10]= ccc     ccc
+11         table[11]= cccc    cccc
+6          table[12]= ccccc   ca
+10         table[13]  aca     ccc
+1          table[4]                  a
+
+b) Se egen fil 1.2.1
+
+c) 22 * 4 = uncompressed size  88 bits
+    12 * 4 = compressed size 48 bits
+48 / 88 * 100 = 55% 
+
+d) 
+a =  3/22 = 0,136 =  13.63 %
+c = 17/22 = 0,77 = 77. %
+b = 2/22 = 0,09 = 9. %
+
+(c(a(b)
+
+c = 0
+a = 10 
+b = 11
+
+Koder vi dette om til bits: 
+C * 17 = 17bits
+A * 3 = 6bits
+B * 2 = 4 bits
+
+Totalt = 27 bits
+88-27 = 61bits 
+Besparelsen er på 69% i dette tilfelle, 14% høyere enn 55 % ved det tidligere tilfelle. Huffman sparer dermed mer enn LZW her.
+
+e) Fikk ikke helt til å tilpasse vår algoritme til denne oppgaven, mht. hamlet.txt og complete_shakespeare.txt. 
+f) Pga. at vi ikke fikk til å tilpasse den forrige algoritmen, så tar vi bare et nokså enkelt eksempel på hvordan WinRAR sin algoritme når det gjelder komprimering. Tar vi å bruker deres algortime(som ikker er open-source), så vil vi se at hamlet.txt sin størrelse, ukomprimert er på 186kb, etter denne algortimen er kjørt så er den på dekomprimeres den til en .rar fil på 69,1kb. 
+186-69 = 117. 117/186 = 63% mer besparelse/komprimeringsgrad.
+
