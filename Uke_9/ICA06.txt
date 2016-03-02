@@ -1,0 +1,54 @@
+1.2.1 a)
+NAND "gate":
+Input 1 | Input 2 | Output
+   A    |    B    | A NAND B
+   0    |    0    |   1
+   0    |    1    |   1
+   1    |    0    |   1
+   1    |    1    |   0
+
+NOT "gate":
+Input   |  Output | 
+   A    |  NOT A  |   
+   0    |    1    |   
+   1    |    0    |   
+  
+
+AND "gate":
+Input 1 | Input 2 | Output
+   A    |    B    | A AND B
+   0    |    0    |   0
+   0    |    1    |   0
+   1    |    0    |   0
+   1    |    1    |   1
+
+OR "gate":
+Input 1 | Input 2 | Output
+   A    |    B    | A OR B
+   0    |    0    |   0
+   0    |    1    |   1
+   1    |    0    |   1
+   1    |    1    |   1
+
+XOR "gate":
+Input 1 | Input 2 | Output
+   A    |    B    | A XOR B
+   0    |    0    |   0
+   0    |    1    |   1
+   1    |    0    |   1
+   1    |    1    |   0
+
+NOR "gate":
+Input 1 | Input 2 | Output
+   A    |    B    | A NOR B
+   0    |    0    |   1
+   0    |    1    |   0
+   1    |    0    |   0
+   1    |    1    |   0
+
+B)
+Programmet flytter head over tape og leser hvert felt. Head kan bes om å sette inn ny informasjon i feltene før den flyttes videre.
+Når prosessen "Stop Tilstand" nåes står det følgende på tape:
+[ ][ ][ ][1][1][1][ ][1][ ] stop
+
+Head leser tre symbol, flytter tre ganger, skriver tre ganger og stopper, det er til sammen 10 operasjoner.
