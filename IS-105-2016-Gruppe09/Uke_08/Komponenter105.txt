@@ -1,0 +1,56 @@
+Komponent
+	Sigurd
+	Lima
+	Gunnhild
+	CPU frekvens
+	2.5 GHz
+	2.9 GHz
+	2,1GHz
+	
+
+	
+
+	Ram størrelse
+	7.83GB
+	7.45GB
+	7,19 
+	
+
+	
+
+	l1 størrelse
+	3*32kb
+	2x16kb
+	4*16KB
+	
+
+	
+
+	l2 størrelse
+	4*256kb
+	1024kb
+	2*2048KB
+	
+
+	
+
+	HDD størrelse
+	931GB
+	465GB
+	931GB
+	
+
+	
+
+	Skjermkort minne størrelse
+	2GB
+	2GB
+	2GB
+	
+
+	
+
+	Oppløsning skjerm
+	1920x1080
+	1366x768
+	1920x1080
