@@ -47,8 +47,8 @@ Input 1 | Input 2 | Output
    1    |    1    |   0
 
 B)
-Programmet flytter head over tape og leser hvert felt. Head kan bes om å sette inn ny informasjon i feltene før den flyttes videre.
+Programmet flytter tape og leser hvert felt head peker på. Head kan bes om å sette inn ny informasjon i feltene før den flyttes videre.
 Når prosessen "Stop Tilstand" nåes står det følgende på tape:
-[ ][ ][ ][1][1][1][ ][1][ ] stop
+[ ][ ][1][0][0][0][ ][ ][ ] stop
 
-Head leser tre symbol, flytter tre ganger, skriver tre ganger og stopper, det er til sammen 10 operasjoner.
+Head leser ni symbol, flytter 8 ganger, skriver 9 ganger og stopper. Til sammen 29 operasjoner.
