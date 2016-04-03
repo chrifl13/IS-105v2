@@ -1,5 +1,5 @@
 # Developer: Manish Raj (technoslab@gmail.com)
-# http://technoslab.blogspot.no/2014/08/write-python-program-for-creating.html
+# kilde/source: http://technoslab.blogspot.no/2014/08/write-python-program-for-creating.html
 import shelve, time, sys
 
 class File(object):
