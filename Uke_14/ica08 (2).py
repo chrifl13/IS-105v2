@@ -1,6 +1,27 @@
 from turtle import *
+from Tkinter import *
 color('red')
-while True:
+
+class PressingButtons:
+    
+    def __init__(self, master):
+        frame = Frame(master)
+        frame.pack()
+        
+        self.quitButton = Button(frame, text="Start", bg="red", command=frame.quit)
+        self.quitButton.pack(side=LEFT)
+        
+root = Tk()
+b = PressingButtons(root)
+root.mainloop()
+
+
+#photo = PhotoImage(file="man.jpg")
+#label = Label(root, image=photo)
+#label.pack()
+#root.mainloop()
+
+while True:  
     speed(1)
     shape("turtle")
     write("Chicken, Fox, Grain")
@@ -39,5 +60,8 @@ while True:
     forward(150)
     write("Chicken, Fox, Grain")
     break
-end_fill()
+while False:
+    break
 done()
+
+
