@@ -1,6 +1,9 @@
+# Importerer biblotek som brukes for språk gjennkjenning.
+
 import speech_recognition as sr
 import pyttsx
 
+# Her startes pyttsx med en pyttsx.init(), denne modulen (pyttsx), lager ord utifra tekst.
 
 engine = pyttsx.init()
 engine.setProperty('rate', 70)
@@ -19,15 +22,15 @@ try:
         with m as source: audio = r.listen(source)
         print("Got it! Now to recognize it...")
         try:
-            # recognize speech using Google Speech Recognition
+            # Her brukes "google recognition" til å gjennkjenne ord
             value = r.recognize_google(audio)
 
-            # we need some special handling here to correctly print unicode characters to standard output
-            if str is bytes: # this version of Python uses bytes for strings (Python 2)
+            # Her trengs en operasjon for å printe unicode bokstaver til standard output
+            if str is bytes: # Denne versionen av python bruker bytes istedenfor strings (python 2)
                 print(u"You said {}".format(value).encode("utf-8"))
                 engine.say('How are you today?')
                 engine.runAndWait()
-            else: # this version of Python uses unicode for strings (Python 3+)
+            else: # Denne versonen av Python bruker unicode istedenfor strings (Python 3)
                 print("You said {}".format(value))
         except sr.UnknownValueError:
             print("Oops! Didn't catch that")
